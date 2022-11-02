@@ -20,7 +20,7 @@ html, body{
 }
 
 body{
-    background-color: #B69121;
+    background-color: #33023a;
 }
 
 #land-page{
@@ -243,7 +243,7 @@ ul{
     }
 
     .land-content > *{
-        font-size: 3.5rem;
+        font-size: 2.5rem;
     }
 
     .content{
