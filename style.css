@@ -1,0 +1,265 @@
+:root{
+    --absoluteBorderX: 0 4rem;
+    --absoluteBorderXY: 4rem 4rem;
+}
+
+
+*{
+    box-sizing: border-box;
+    list-style: none;
+    color: white;
+    text-decoration: none;
+    
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+
+}
+
+body{
+    background-color: #B69121;
+}
+
+#land-page{
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+    height: 100vh;
+}
+
+#animBG{
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+}
+
+#animBG > .bgTemp{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#animBG > .overlay{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(10, 3, 3, 0.507);
+    z-index: 2;
+    top: 0;
+    left: 0;
+}
+
+
+.nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4rem;
+    background-color: rgba(9, 1, 19, 0.712);
+    z-index: 2;
+}
+
+
+.nav-content{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+    height: 100%;
+    padding: var(--absoluteBorderX);
+}
+
+.logo > a{
+    font-size: 2rem;
+}
+
+.land-content{
+    margin: var(--absoluteBorderX);
+    font-size: 3rem;
+    position: absolute;
+    top: 20%;
+    left: 0;
+    height: 4rem;
+    z-index: 2;
+    
+}
+
+
+.land-content > *{
+    font-size: 5rem;
+    line-height: 1.5;
+    background-color: white;
+    color: black;
+}
+
+.parallax-image{
+    background-image: url(/_resx/wallpaperflare.com_wallpaper.jpg);
+
+    height: 60vh;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+
+
+.content{
+    padding: var(--absoluteBorderXY);
+    display: flex;
+    min-height: 100%;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    
+}
+
+.container{
+    min-height: 80vh;
+    background-image: url(/_resx/wallpaperflare.com_wallpaper.jpg), linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+    background-blend-mode: overlay;
+    background-attachment: fixed;
+}
+
+.content > *{
+    margin: 1rem;
+
+}
+
+.side{
+    padding: 2rem;
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    background-image: url('https://media.tenor.com/O8s7IYl66iUAAAAC/pixel-art.gif'),linear-gradient(rgba(0, 0, 0, 0.267),rgb(0, 0, 0));
+
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.side img{
+    width: 60%;
+    height: auto;
+    
+    border-radius: 100%;
+}
+
+.side > *{
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+    margin: 0.2rem;
+    width: 100%;
+    text-align: center;
+}
+
+.profile-info > .name{
+    font-size: 40px;
+    color: #FFB703;
+}
+
+.profile-info > .description{
+    color: #ffffffb9;
+}
+
+
+.main-dish{
+    background-color: #1F0423;
+    flex-grow: 3;
+    padding: 0.5rem 2rem;
+    height: auto;
+    width: 100%;
+}
+
+.social-media{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 8rem;
+}
+
+.social-media > *{
+    background-color: #3a0ca3;
+    height: 3rem;
+    
+}
+
+.social-media > *:hover{
+    background-color: #240046;
+    transition: 0.6s cubic-bezier(0.16, 1, 0.3, 1);;
+}
+.media > *{
+    padding: 0 0.4rem;
+}
+
+.fab{
+    font-size: 1.6rem;
+}
+
+.social-media > *{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#foot-page{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: black;
+    height: 20vh;
+}
+
+#foot-page span{
+    color: #FFB703;
+}
+
+ul{
+    display: fle;
+    margin: 0;
+    padding-top: 0;
+}
+
+@media only screen and (max-width: 750px){
+    :root{
+        --absoluteBorderX: 2rem;
+        --absoluteBorderXY: 1rem;
+    }
+
+    .land-content > *{
+        font-size: 3.5rem;
+    }
+
+    .content{
+        flex-direction: column;
+    }
+
+    .container{
+        width: 100%;
+    }
+
+    .side{
+        width: 100%;
+    }
+    .content > *{
+        margin: auto;
+
+    }
+
+}
