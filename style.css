@@ -1,36 +1,42 @@
-:root{
+:root {
     --absoluteBorderX: 0 4rem;
     --absoluteBorderXY: 4rem 4rem;
+    --absoluteCardBorderXY: 1.5rem 1.6rem;
+    --absoluteDescBorderXY: 1.5rem 2.5rem;
 }
 
 
-*{
+* {
     box-sizing: border-box;
     list-style: none;
     color: white;
     text-decoration: none;
-    
+
 }
 
-html, body{
+html,
+body {
     margin: 0;
     padding: 0;
     font-family: 'Lato', sans-serif;
 
 }
 
-body{
+body {
     background-color: #33023a;
 }
 
-#land-page{
-    -webkit-user-select: none; /* Safari */
-    -ms-user-select: none; /* IE 10 and IE 11 */
-    user-select: none; /* Standard syntax */
+#land-page {
+    -webkit-user-select: none;
+    /* Safari */
+    -ms-user-select: none;
+    /* IE 10 and IE 11 */
+    user-select: none;
+    /* Standard syntax */
     height: 100vh;
 }
 
-#animBG{
+#animBG {
     position: absolute;
     justify-content: center;
     align-items: center;
@@ -39,13 +45,13 @@ body{
 
 }
 
-#animBG > .bgTemp{
+#animBG>.bgTemp {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-#animBG > .overlay{
+#animBG>.overlay {
     position: absolute;
     width: 100%;
     height: 100vh;
@@ -56,7 +62,7 @@ body{
 }
 
 
-.nav{
+.nav {
     position: absolute;
     top: 0;
     left: 0;
@@ -67,7 +73,7 @@ body{
 }
 
 
-.nav-content{
+.nav-content {
     display: flex;
     align-items: center;
     justify-content: start;
@@ -76,11 +82,11 @@ body{
     padding: var(--absoluteBorderX);
 }
 
-.logo > a{
+.logo>a {
     font-size: 2rem;
 }
 
-.land-content{
+.land-content {
     margin: var(--absoluteBorderX);
     font-size: 3rem;
     position: absolute;
@@ -88,18 +94,18 @@ body{
     left: 0;
     height: 4rem;
     z-index: 2;
-    
+
 }
 
 
-.land-content > *{
+.land-content>* {
     font-size: 5rem;
     line-height: 1.5;
     background-color: white;
     color: black;
 }
 
-.parallax-image{
+.parallax-image {
     background-image: url(/_resx/wallpaperflare.com_wallpaper.jpg);
 
     height: 60vh;
@@ -113,36 +119,36 @@ body{
 
 
 
-.content{
+.content {
     padding: var(--absoluteBorderXY);
     display: flex;
     min-height: 100%;
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
-    
+
 }
 
-.container{
+.container {
     min-height: 80vh;
-    background-image: url(/_resx/wallpaperflare.com_wallpaper.jpg), linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+    background-image: url(/_resx/wallpaperflare.com_wallpaper.jpg), linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
     background-blend-mode: overlay;
     background-attachment: fixed;
 }
 
-.content > *{
+.content>* {
     margin: 1rem;
 
 }
 
-.side{
-    padding: 2rem;
-    min-height: 100%;
+.side {
+    padding: var(--absoluteCardBorderXY);
+    height: 40rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
-    background-image: url('https://media.tenor.com/O8s7IYl66iUAAAAC/pixel-art.gif'),linear-gradient(rgba(0, 0, 0, 0.267),rgb(0, 0, 0));
+    background-image: url('https://media.tenor.com/O8s7IYl66iUAAAAC/pixel-art.gif'), linear-gradient(rgba(0, 0, 0, 0.267), rgb(0, 0, 0));
 
     background-blend-mode: overlay;
     background-repeat: no-repeat;
@@ -150,73 +156,87 @@ body{
     background-position: center;
 }
 
-.side img{
+.side img {
     width: 60%;
     height: auto;
-    
+
     border-radius: 100%;
 }
 
-.side > *{
-    -webkit-user-select: none; /* Safari */
-    -ms-user-select: none; /* IE 10 and IE 11 */
-    user-select: none; /* Standard syntax */
+.side>* {
+    -webkit-user-select: none;
+    /* Safari */
+    -ms-user-select: none;
+    /* IE 10 and IE 11 */
+    user-select: none;
+    /* Standard syntax */
     margin: 0.2rem;
     width: 100%;
     text-align: center;
 }
 
-.profile-info > .name{
+.profile-info>.name {
     font-size: 40px;
     color: #FFB703;
 }
 
-.profile-info > .description{
+.profile-info>.description {
     color: #ffffffb9;
 }
 
 
-.main-dish{
-    background-color: #1F0423;
+.main-dish {
     flex-grow: 3;
-    padding: 0.5rem 2rem;
-    height: auto;
+    min-height: 30rem;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
 }
 
-.social-media{
+.dishes {
+    width: 100%;
+    padding: var(--absoluteDescBorderXY);
+    background-color: #1F0423;
+    margin-bottom: 20px;
+}
+
+.social-media {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     height: 8rem;
 }
 
-.social-media > *{
+.social-media>* {
     background-color: #3a0ca3;
     height: 3rem;
-    
+
 }
 
-.social-media > *:hover{
+.social-media>*:hover {
     background-color: #240046;
-    transition: 0.6s cubic-bezier(0.16, 1, 0.3, 1);;
+    transition: 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    ;
 }
-.media > *{
+
+.media>* {
     padding: 0 0.4rem;
 }
 
-.fab{
-    font-size: 1.6rem;
+.fab {
+    font-size: 1.4rem;
 }
 
-.social-media > *{
+.social-media>* {
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
 }
 
-#foot-page{
+#foot-page {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -226,40 +246,75 @@ body{
     height: 20vh;
 }
 
-#foot-page span{
+#foot-page span {
     color: #FFB703;
 }
 
-ul{
-    display: fle;
+ul {
     margin: 0;
-    padding-top: 0;
+
 }
 
-@media only screen and (max-width: 750px){
-    :root{
+li {
+    padding-bottom: 1rem;
+}
+
+.ul-inline {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    list-style-type: none;
+    padding: 0;
+}
+
+.ul-inline>li {
+    padding-right: 0.5rem;
+    padding-bottom: 0;
+}
+
+.right-border {
+    border-left: #FFB703 solid;
+    padding-left: 10px;
+}
+
+.img-fluid {
+    border-radius: 100%;
+    width: 50px;
+    height: auto;
+}
+
+
+@media only screen and (max-width: 750px) {
+    :root {
         --absoluteBorderX: 2rem;
         --absoluteBorderXY: 1rem;
+        --abosulutecontentBorderXY: 1.2rem 2.5rem;
     }
 
-    .land-content > *{
+    .land-content>* {
         font-size: 2.5rem;
     }
 
-    .content{
+    .content {
         flex-direction: column;
     }
 
-    .container{
+    .dishes {
+        padding: 1.2rem 2.5rem;
+        background-color: #1F0423;
+        margin-bottom: 0;
+        margin-top: 1.5rem;
+    }
+
+    .container {
         width: 100%;
     }
 
-    .side{
+    .side {
         width: 100%;
     }
-    .content > *{
+
+    .content>* {
         margin: auto;
-
     }
-
 }
