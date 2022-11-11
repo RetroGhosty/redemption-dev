@@ -1,10 +1,13 @@
 var typing=new Typed(".quotes", {
     strings: ["",
-    "Look at the sky",
+    "Jam a man of Fortune,",
+    "and J must seek my fortune.",
+    "~Henry Averies, 1994",
+    ""
     ],
     typeSpeed: 50,
     backSpeed: 40,
-    loop: false,
+    loop: true,
 });
 
 const countEl = document.getElementById('count');
